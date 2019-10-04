@@ -1,0 +1,15 @@
+node_modules/.bin/browser-sync start --server --files "css/*.css" "*.html" 
+
+autoprefixer-cli -o main.prefixed.css main.css
+
+nu-html-checker
+Usage: cli [options] <files/urls ...>
+
+  Options:
+
+    -h, --help                   output usage information
+    -V, --version                output the version number
+    -f, --formatter <formatter>  Choose the formatter to use. (stylish, json)
+
+cli -f html http://127.0.0.1:5500/strona4/learning-git-2/index.html
+cli -f css C:/kodilla/strona4/learning-git-2/css/style.css
